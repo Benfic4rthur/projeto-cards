@@ -1,0 +1,35 @@
+.button {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    transition: 0.7s;
+
+    &:active{
+        bottom: -2px;
+    }
+&--white {
+    background-color: white;
+}
+
+&--white:hover {
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
+
+&--purple {
+    background-color: #6f42c1;
+}
+
+&--purple:hover {
+    background-color: yellowgreen;
+    color: white;
+    transition: 0.7s;
+}
+}
