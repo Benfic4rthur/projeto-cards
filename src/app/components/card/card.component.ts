@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -10,4 +10,9 @@ export class CardComponent {
   @Input({required: true, alias: 'cardText'}) cardText: string = ''; // recebe o texto do componente pai
   @Input({required: true, alias: 'cardPrice'}) cardPrice: number = 0; // recebe o preço do componente pai
   @Input({required: true, alias: 'cardStyle'}) cardStyle: 'orange' | 'green' = 'orange';
+  @Output('buttonClicked') buttonClickedEmitt = new EventEmitter<void>();
+
+  onButtonClicked(){
+    this.buttonClickedEmitt.emit();
+  }
 }

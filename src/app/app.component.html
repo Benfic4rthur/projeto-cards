@@ -1,6 +1,6 @@
 <div class="container">
-<app-card [cardText]="'Simples'" [cardPrice]="100" [cardStyle]="'orange'"></app-card>
-<app-card [cardText]="'Completo'" [cardPrice]="250" [cardStyle]="'green'"></app-card>
+<app-card [cardText]="'Simples'" [cardPrice]="100" [cardStyle]="'orange'" (buttonClicked)="onCardbuttonClicked()"></app-card>
+<app-card [cardText]="'Completo'" [cardPrice]="250" [cardStyle]="'green'" (buttonClicked)="onCardbuttonClicked()"></app-card>
 <!-- <app-button [buttonText]="'Adquirir'" [buttonStyle]="'white'" (buttonClickedEmitt)="buttonClicked()"></app-button>
 <app-button [buttonText]="'Adquirir'" [buttonStyle]="'purple'"(buttonClickedEmitt)="buttonClicked()"></app-button> -->
 </div>

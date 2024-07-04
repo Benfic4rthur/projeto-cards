@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  buttonClicked(){
-    console.log('botão clicado');
+  // buttonClicked(){
+  //   console.log('botão clicado');
+  // }
+  onCardbuttonClicked(){
+    console.log('botão do card clicado');
   }
 }
